@@ -1,6 +1,6 @@
 # R&R Music API Helper Library for node
 [![Build Status](https://travis-ci.org/hughrawlinson/randr-node.svg?branch=master)](https://travis-ci.org/hughrawlinson/randr-node)
-
+[ ![Codeship Status for hughrawlinson/randr-node](https://codeship.com/projects/9a1eeb50-a7d4-0132-0844-0a6f02942689/status?branch=master)](https://codeship.com/projects/67262)
 This is my helper library for the R&R Music API. Documentation for the API itself can be found [here](http://dev.randrmusic.com/documentation).
 
 # How to use
