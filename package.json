@@ -16,7 +16,7 @@
     "url": "https://github.com/hughrawlinson/randr-node/issues"
   },
   "dependencies": {
-    "lodash": "^3.4.0",
+    "lodash": "^3.3.0",
     "request": "^2.53.0"
   },
   "devDependencies": {
