@@ -1,5 +1,4 @@
 var assert = require("assert");
-var app = require('../lib-cov/albums');
 // setup
 var RandR = require("../index");
 var randr = new RandR(process.env.RANDRMUSICAPIACCESSTOKEN);
@@ -39,6 +38,13 @@ describe('Albums', function(){
         }
       );
     });
+    it('should fail when called without a required parameter',function(done){
+      randr.albums.id({},function(err,data){
+          assert(err!=null);
+          done();
+        }
+      );
+    });
   });
   describe('Similar', function(){
     it('should return a list of similar albums when called with a valid id', function(done){
@@ -69,6 +75,13 @@ describe('Albums', function(){
         },function(err,data){
           assert.equal(err,null,"err is null")
           assert(typeof(data)=="object","data is object");
+          done();
+        }
+      );
+    });
+    it('should fail when called without a required parameter',function(done){
+      randr.albums.similar({},function(err,data){
+          assert(err!=null);
           done();
         }
       );

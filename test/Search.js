@@ -1,5 +1,4 @@
 var assert = require("assert");
-var app = require('../lib-cov/search');
 // setup
 var RandR = require("../index");
 var randr = new RandR(process.env.RANDRMUSICAPIACCESSTOKEN);
@@ -19,6 +18,13 @@ describe('Search', function(){
           }
         );
       })
+    });
+    it('should fail when called without a required parameter',function(done){
+      randr.search.tracks({},function(err,data){
+          assert(err!=null);
+          done();
+        }
+      );
     });
   });
 });

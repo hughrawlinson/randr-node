@@ -1,8 +1,8 @@
 test:
 	./node_modules/.bin/jscoverage lib lib-cov
-	./node_modules/.bin/mocha -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+	istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 clean:
-	rm -rf coverage lib-cov node_modules coverage.html
+	rm -rf coverage lib-cov coverage.html
 
 .PHONY: test
