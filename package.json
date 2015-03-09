@@ -4,7 +4,7 @@
   "description": "A Wrapper for the R&R Music API",
   "main": "index.js",
   "scripts": {
-    "test": "make run-coverage"
+    "test": "make test"
   },
   "author": "Hugh Rawlinson",
   "license": "ISC",
