@@ -1,4 +1,4 @@
-# R&R Music API Helper Library for node [![Build Status](https://travis-ci.org/hughrawlinson/randr-node.svg?branch=master)](https://travis-ci.org/hughrawlinson/randr-node) [ ![Codeship Status for hughrawlinson/randr-node](https://codeship.com/projects/9a1eeb50-a7d4-0132-0844-0a6f02942689/status?branch=master)](https://codeship.com/projects/67262) [![Dependency Status](https://gemnasium.com/hughrawlinson/randr-node.svg)](https://gemnasium.com/hughrawlinson/randr-node) [![npm version](https://badge.fury.io/js/randr-node.svg)](http://badge.fury.io/js/randr-node)
+# R&R Music API Helper Library for node [![Build Status](https://img.shields.io/travis/hughrawlinson/randr-node.svg?style=flat-square)](https://travis-ci.org/hughrawlinson/randr-node) [![Dependency Status](https://img.shields.io/gemnasium/hughrawlinson/randr-node.svg?style=flat-square)](https://gemnasium.com/hughrawlinson/randr-node) ![npm version](https://img.shields.io/npm/v/randr-node.svg?style=flat-square)
 
 This is my helper library for the R&R Music API. Documentation for the API itself can be found [here](http://dev.randrmusic.com/documentation).
 
