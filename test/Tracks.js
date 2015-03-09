@@ -3,6 +3,8 @@ var assert = require("assert");
 var RandR = require("../index");
 var randr = new RandR(process.env.RANDRMUSICAPIACCESSTOKEN);
 
+randr.setApiKey(process.env.RANDRMUSICAPIACCESSTOKEN);
+
 
 describe('Tracks', function(){
   describe('Info', function(){

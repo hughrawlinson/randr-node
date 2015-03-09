@@ -1,6 +1,6 @@
 # R&R Music API Helper Library for node
 
-[![Build Status](https://img.shields.io/travis/hughrawlinson/randr-node.svg?style=flat-square)](https://travis-ci.org/hughrawlinson/randr-node) [![Dependency Status](https://img.shields.io/gemnasium/hughrawlinson/randr-node.svg?style=flat-square)](https://gemnasium.com/hughrawlinson/randr-node) ![npm version](https://img.shields.io/npm/v/randr-node.svg?style=flat-square) [![Coverage Status](https://img.shields.io/coveralls/hughrawlinson/randr-node.svg?style=flat-square)](https://coveralls.io/r/hughrawlinson/randr-node?branch=master)
+[![Build Status](https://img.shields.io/travis/hughrawlinson/randr-node.svg?style=flat-square)](https://travis-ci.org/hughrawlinson/randr-node) [![Dependency Status](https://img.shields.io/gemnasium/hughrawlinson/randr-node.svg?style=flat-square)](https://gemnasium.com/hughrawlinson/randr-node) ![npm version](https://img.shields.io/npm/v/randr.svg?style=flat-square) [![Coverage Status](https://img.shields.io/coveralls/hughrawlinson/randr-node.svg?style=flat-square)](https://coveralls.io/r/hughrawlinson/randr-node?branch=master)
 
 ---------------------------------------
 
