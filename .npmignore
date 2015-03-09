@@ -1,1 +1,4 @@
 .npmignore
+coverage
+lib-cov
+coverage.html

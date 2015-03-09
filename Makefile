@@ -1,4 +1,7 @@
 test:
-	@./node_modules/.bin/mocha -t 10000
+	@./node_modules/.bin/mocha
+
+clean:
+	rm -rf coverage
 
 .PHONY: test

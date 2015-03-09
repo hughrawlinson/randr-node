@@ -1,5 +1,5 @@
 var assert = require("assert");
-
+var app = require('../lib-cov/search');
 // setup
 var RandR = require("../index");
 var randr = new RandR(process.env.RANDRMUSICAPIACCESSTOKEN);
