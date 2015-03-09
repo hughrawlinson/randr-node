@@ -7,7 +7,7 @@ var randr = new RandR(process.env.RANDRMUSICAPIACCESSTOKEN);
 describe('Artists', function(){
   describe('Info', function(){
     it('should return an artist info object when called with a valid id', function(done){
-      randr.artists.id({
+      randr.artists.info({
         id:'medianet:artist:13665'
         },function(err,data){
           assert.equal(err,null,"err is null");
@@ -17,7 +17,7 @@ describe('Artists', function(){
       );
     });
     it('should return an error when called with an invalid id', function(done){
-      randr.artists.id({
+      randr.artists.info({
         id:'invalidid'
         },function(err,data){
           assert.equal(data.status,404);
@@ -26,7 +26,7 @@ describe('Artists', function(){
       );
     });
     it('should return a set of artist info objects when called with many valid ids', function(done){
-      randr.artists.id({
+      randr.artists.info({
           ids:[
             'medianet:artist:13665',
             'medianet:artist:19575'
@@ -39,7 +39,7 @@ describe('Artists', function(){
       );
     });
     it('should fail when called without a required parameter',function(done){
-      randr.artists.id({},function(err,data){
+      randr.artists.info({},function(err,data){
           assert(err!=null);
           done();
         }

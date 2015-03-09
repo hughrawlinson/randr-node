@@ -7,7 +7,7 @@ var randr = new RandR(process.env.RANDRMUSICAPIACCESSTOKEN);
 describe('Tracks', function(){
   describe('Info', function(){
     it('should return a track info object when called with a valid id', function(done){
-      randr.tracks.id({
+      randr.tracks.info({
         id:'medianet:track:104058357'
         },function(err,data){
           assert.equal(err,null,"err is null")
@@ -17,7 +17,7 @@ describe('Tracks', function(){
       );
     });
     it('should return an error when called with an invalid id', function(done){
-      randr.tracks.id({
+      randr.tracks.info({
         id:'invalidid'
         },function(err,data){
           assert.equal(data.status,404);
@@ -26,7 +26,7 @@ describe('Tracks', function(){
       );
     });
     it('should return a set of track info objects when called with many valid ids', function(done){
-      randr.tracks.id({
+      randr.tracks.info({
           ids:[
             'medianet:track:104058357',
             'soundcloud:track:97384586'
@@ -39,7 +39,7 @@ describe('Tracks', function(){
       );
     });
     it('should fail when called without a required parameter',function(done){
-      randr.tracks.id({},function(err,data){
+      randr.tracks.info({},function(err,data){
           assert(err!=null);
           done();
         }
